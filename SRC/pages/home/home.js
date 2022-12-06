@@ -12,8 +12,16 @@ export default () => {
         </nav>
       </header>
       <main class='contentPage'>
+        <section class='midiasDigitais'>
+          <a href='' class='redessSociais'><img src='img/insta.png' alt='Instagram'></a>
+          <a href='' class='redessSociais'><img src='img/twitter.png' alt='twitter'></a>
+          <a href='' class='redessSociais'><img src='img/youtube.png' alt='youtuber'></a>
+        </section>
         <img src='img/logo-white.png' class='logoSite' alt='logo'>
-      </main>`;
+      </main>
+      <footer>
+        <p class='textFooter'>&copy; Desenvolvido por <a href='https://www.linkedin.com/in/andresa-vieira/' class='link'>Andresa Vieira</a></p>
+      </footer>`;
   container.innerHTML = template;
 
   const btnMovie = container.querySelector('#movies');
