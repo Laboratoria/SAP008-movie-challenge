@@ -10,8 +10,8 @@ header {
 }
 .navbar li{
     color: white;
-    text-align: center;
-    margin: 70% 15% 10% 15%;
+    align-items: center;
+    padding: 70% 20% 50% 20%;
     list-style: none;
 }
 .btnMenu:hover {
@@ -36,11 +36,38 @@ header {
     flex-direction: column;
     margin: auto;
 }
+.midiasDigitais{
+    display: flex;
+    justify-content: right;
+    flex-direction: row;
+    margin: 2% 10% 0% 0%;
+
+}
+.redessSociais img{
+    width: 40px;
+    padding: 10px;
+}
+.redessSociais:hover{
+    transform: scale(0.9);
+}
 .logoSite{
     display: flex;
     flex-direction: column;
-    margin: 15% 30% 30% 40%;
+    width: 40%;
+    margin: auto;
 }
-.logoSite img{
-    width: 50%;
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    padding: 13% 0% 5% 0%;
+}
+.link{
+    text-decoration: none;
+    color: white;
+}
+.textFooter{
+    position: fixed;
+    bottom: 1%;
 }
