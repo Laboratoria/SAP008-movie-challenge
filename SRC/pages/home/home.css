@@ -1,0 +1,47 @@
+header {
+    overflow: hidden;
+    background-color: black;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 10%;
+    border-right: 3px solid white;
+    list-style: none;
+}
+.navbar {
+    color: white;
+    text-align: center;
+    margin: 90% 0% 10% 25%;
+    list-style: none;
+}
+button:hover {
+    transform: scale(0.9);
+}
+.btnMenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    border: none;
+    margin: 10%;
+}
+.btnMenu img{
+    width: 80px;
+}
+.contentPage{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    flex-direction: column;
+    margin: auto;
+}
+.logoSite{
+    display: flex;
+    flex-direction: column;
+    margin: 15% 30% 30% 40%;
+}
+.logoSite img{
+    width: 50%;
+}
