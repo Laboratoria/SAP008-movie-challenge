@@ -6,13 +6,13 @@ export default () => {
         <header >
           <nav class='navbar'>
             <ul class='ulNav'>
+            <li><butoon id='home' class='btnMenu'><img src='img/inicio.png' alt='Inicio'>INICIO</butoon></li>
               <li><butoon id='movies' class='btnMenu'><img src='img/filmes.png' alt='filmes'>FILMES</butoon></li>
               <li><button id='series' class='btnMenu'><img src='img/série.png'>SÉRIES</button></li>
             </ul>
           </nav>
         </header>
         <main class='contentPage'>
-          <img src='img/logo-white.png' class='logoSite' alt='logo'>
         </main>`;
   container.innerHTML = template;
 
@@ -26,6 +26,11 @@ export default () => {
   console.log(btnSerie);
   btnSerie.addEventListener('click', () => {
     window.location.hash = '#series';
+  });
+
+  const btnHome = container.querySelector('#home');
+  btnHome.addEventListener('click', () => {
+    window.location.hash = '#home';
   });
 
   return container;
