@@ -4,40 +4,64 @@
     "description": "Movie Challenge @ Laboratoria",
     "main": "src/index.html",
     "keywords": [
-      "javascript",
-      "firebase",
-      "jest"
+        "javascript",
+        "firebase",
+        "jest"
     ],
     "license": "MIT",
     "scripts": {
-      "htmlhint": "htmlhint dist/*.html ",
-      "eslint": "eslint --ext .js src/ test/",
-      "stylelint": "stylelint --aei src/**/*.css",
-      "test": "jest --coverage",
-      "start": "serve -s src/",
-      "deploy": "gh-pages -d src"
+        "htmlhint": "htmlhint dist/*.html ",
+        "eslint": "eslint --ext .js src/ test/",
+        "stylelint": "stylelint --aei src/**/*.css",
+        "test": "jest --coverage",
+        "start": "serve -s src/",
+        "deploy": "gh-pages -d src",
+        "build": "react-scripts build",
+        "test:coverage": "jest --coverage",
+        "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
     },
     "devDependencies": {
-      "@babel/core": "^7.11.4",
-      "@babel/preset-env": "^7.11.0",
-      "babel-jest": "^27.0.1",
-      "eslint": "^8.3.0",
-      "eslint-config-airbnb-base": "^15.0.0",
-      "eslint-plugin-import": "^2.18.2",
-      "eslint-plugin-jest": "^25.3.0",
-      "htmlhint": "^1.0.0",
-      "jest": "^27.0.1",
-      "regenerator-runtime": "^0.13.1",
-      "serve": "^14.1.1",
-      "stylelint": "^14.1.0",
-      "stylelint-config-recommended": "^6.0.0"
+        "@babel/core": "^7.11.4",
+        "@babel/preset-env": "^7.11.0",
+        "babel-jest": "^27.0.1",
+        "eslint": "^8.3.0",
+        "eslint-config-airbnb": "^19.0.4",
+        "eslint-config-airbnb-base": "^15.0.0",
+        "eslint-plugin-import": "^2.18.2",
+        "eslint-plugin-jest": "^25.3.0",
+        "eslint-plugin-jsx-a11y": "^6.6.1",
+        "eslint-plugin-react": "^7.31.11",
+        "eslint-plugin-react-hooks": "^4.6.0",
+        "htmlhint": "^1.0.0",
+        "jest": "^27.0.1",
+        "react-router-dom": "^6.4.5",
+        "regenerator-runtime": "^0.13.1",
+        "serve": "^14.1.1",
+        "stylelint": "^14.1.0",
+        "stylelint-config-recommended": "^6.0.0"
     },
     "engines": {
-      "node": ">=16.x"
+        "node": ">=16.x"
     },
     "dependencies": {
-      "firebase": "^9.12.1",
-      "gh-pages": "^4.0.0"
+        "@jest/globals": "^29.3.1",
+        "@testing-library/jest-dom": "^5.16.5",
+        "@testing-library/react": "^13.4.0",
+        "@testing-library/user-event": "^13.5.0",
+        "date-fns": "^2.29.3",
+        "firebase": "^9.12.1",
+        "gh-pages": "^4.0.0",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-icons": "^4.6.0",
+        "react-router-dom": "^6.4.2",
+        "react-scripts": "^5.0.1",
+        "web-vitals": "^2.1.4"
     }
-  }
-  
+}
