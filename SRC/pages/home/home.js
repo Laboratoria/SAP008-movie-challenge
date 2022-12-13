@@ -1,44 +1,35 @@
 import React from 'react';
-//import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import "./home.css";
 
 const Home = () => {
   return (
   <div>
     <header >
-      <nav class='navbar'>
-        <ul class='ulNav'>
-          <li><butoon id='movies' class='btnMenu'><img src='img/filmes.png' alt='filmes'/>FILMES</butoon></li>
-          <li><button id='series' class='btnMenu'><img src='img/série.png'/>SÉRIES</button></li>
+      <nav className='navbar'>
+        <ul className='ulNav'>
+          <li>
+            <Link to="/movie" className='btnMenu'><img src='../../assets/filmes.png' alt='Filmes'/></Link>
+          </li>
+          <li>
+            <Link to="/serie" className='btnMenu'><img src='../../assets/série.png' alt="Séries"/></Link>
+          </li>
         </ul>
       </nav>
     </header>
-    <main class='contentPage'>
-      <section class='midiasDigitais'>
-        <a href='' class='redessSociais'><img src='img/insta.png' alt='Instagram'/></a>
-        <a href='' class='redessSociais'><img src='img/twitter.png' alt='twitter'/></a>
-        <a href='' class='redessSociais'><img src='img/youtube.png' alt='youtuber'/></a>
+    <main className='contentPage'>
+      <section className='midiasDigitais'>
+        <Link to='' className='redessSociais'><img src='img/insta.png' alt='Instagram'/></Link>
+        <Link to='' className='redessSociais'><img src='img/twitter.png' alt='twitter'/></Link>
+        <Link to='' className='redessSociais'><img src='img/youtube.png' alt='youtuber'/></Link>
       </section>
-      <img src='img/logo-white.png' class='logoSite' alt='logo'/>
+      <img src='assets/logo-white.png' className='logoSite' alt='logo'/>
     </main>
     <footer>
-      <p class='textFooter'>&copy; Desenvolvido por <a href='https://www.linkedin.com/in/andresa-vieira/' class='link'>Andresa Vieira</a></p>
+      <p className='textFooter'>&copy; Desenvolvido por <Link to='https://www.linkedin.com/in/andresa-vieira/' className='link'>Andresa Vieira</Link></p>
     </footer>
   </div>
   );
 };
 
 export default Home;
-
-/*
-const btnMovie = container.querySelector('#movies');
-console.log(btnMovie);
-btnMovie.addEventListener('click', () => {
-  window.location.hash = '#movies';
-});
-
-const btnSerie = container.querySelector('#series');
-console.log(btnSerie);
-btnSerie.addEventListener('click', () => {
-  window.location.hash = '#series';
-});
-*/

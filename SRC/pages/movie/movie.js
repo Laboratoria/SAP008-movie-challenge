@@ -1,35 +1,26 @@
 import React from 'react';
-//import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import "./movie.css";
 
 const Movie = () =>{
   return (
     <div>
       <header >
-        <nav class='navbar'>
-          <ul class='ulNav'>
-            <li><butoon id='home' class='btnMenu'><img src='img/inicio.png' alt='Inicio'/>INICIO</butoon></li>
-            <li><button id='series' class='btnMenu'><img src='img/série.png'/>SÉRIES</button></li>
+        <nav className='navbar'>
+          <ul className='ulNav'>
+            <li>
+              <Link to="/" className='btnMenu'><img src='assets/inicio.png' alt='Inicio'/></Link>
+            </li>
+            <li>
+              <Link to="/serie" className='btnMenu'><img src='assets/série.png' alt="Séries"/></Link>
+            </li>
           </ul>
         </nav>
       </header>
-      <main class='contentPage'>
+      <main className='contentPage'>
       </main>
     </div>
   );
-}
+};
 
 export default Movie;
-
-
-/*
-const btnSerie = container.querySelector('#series');
-console.log(btnSerie);
-btnSerie.addEventListener('click', () => {
-  window.location.hash = '#series';
-});
-
-const btnHome = container.querySelector('#home');
-btnHome.addEventListener('click', () => {
-  window.location.hash = '#home';
-});
-*/
