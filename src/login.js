@@ -1,3 +1,5 @@
+import {loginEmailPassword} from './lib/index.js';
+
 export default () => {
     const container = document.createElement('div');
 
@@ -22,5 +24,22 @@ export default () => {
         </form>
      `;
      container.innerHTML = template;
+
+     const email= container.querySelector('#inpt-email');
+     const password= container.querySelector('#inpt-password');
+     const login= container.querySelector('#inpt-login');
+
+     login.addEventListener('click', (e) =>{
+        e.preventDefault();
+
+        loginEmailPassword(email.value, password.value)
+        .then(() => {
+  
+          window.location.hash = '#home';
+        })
+        .catch(() => {
+          msgErro.innerHTML = 'usário ou senha incorretos';
+        });
+    });
      return container;
 }
