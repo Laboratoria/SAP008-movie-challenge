@@ -6,3 +6,4 @@ import {app} from './config-firebase.js';
     const auth = getAuth(app);
     return signInWithEmailAndPassword(auth, email, password);
   }
+  
