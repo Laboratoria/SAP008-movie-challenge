@@ -1,7 +1,9 @@
-body{
-    background-color: black;
+*{
+    padding: 0;
+    margin: 0;
   }
-  .title-movie{
+  
+  .phrase-movie{
     color: #E0A20E;
     text-align: center;
   }
