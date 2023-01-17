@@ -1,22 +1,32 @@
 *{
     padding: 0;
     margin: 0;
-  }
+  } 
+.phrase-movie{
+    width: 100%;
+    height: 1rem;
+    background-color: black;
+   
+}
+.title-movie{
+    width: 100%;
+    height: 5rem;
+}
 .login{
     width: 100%;
-    height: 46.3rem;
+    height: 41.3rem;
     background-color: black;
     background-image: url(./img/capa-movie.png);
-    background-size: 92%;
+    background-size: 75%;
     background-repeat: no-repeat;  
     background-position: center;
-    background-position-y: 70%;
+    background-position-y: -500%;
     display: flex;
     align-items: flex-end;
 }
 .form-login{
-    width: 80%;
-    height: 20rem;
+    width: 65%;
+    height: 23rem;
     background-color: #564D4D;
     border-radius: 0.6rem;
     display: flex;
@@ -24,5 +34,11 @@
     align-items: center;
     justify-content: space-evenly;
     gap: 2rem;
-    margin: 6% 0 27% 0;
+    margin: 0 0 20% 17%;
+    opacity: 0.9;
+}
+.form-login input{
+    width: 100%;
+    height: 1.6rem;
+    border-radius: 5px;
 }

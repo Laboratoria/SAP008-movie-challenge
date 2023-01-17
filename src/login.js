@@ -10,11 +10,13 @@ export default () => {
   <section class="login">
      
         <form class="form-login">
-        <div class="inpt-email">
-          <input type="text" id="inptEmail" autocomplete="off" placeholder="email">Email</input>
+        <div class="form-input">
+        <label for="email">Email</label><br>
+          <input type="text" id="inptEmail" autocomplete="off" placeholder="email">
         </div>
-        <div class="inpt-password">
-          <input type="password" id="inptPassword" autocomplete="off" placeholder="senha">Senha</input>
+        <div class="form-input">
+        <label for="email">Senha</label><br>
+          <input type="password" id="inptPassword" autocomplete="off" placeholder="senha">
         </div>
         <div>
           <input type="submit" value="Entrar" id="inptLogin">
